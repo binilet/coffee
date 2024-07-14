@@ -9,37 +9,37 @@ const icons = {
 
 // ==============================|| EXTRA PAGES MENU ITEMS ||============================== //
 
-const pages = {
-  id: 'pages',
+const products = {
+  id: 'products',
   title: 'Products',
   caption: 'Products and Items',
   type: 'group',
   children: [
     {
       id: 'authentication',
-      title: 'Product And Items',
+      title: 'Products and Items',
       type: 'collapse',
       icon: icons.IconBrandProducthunt,
 
       children: [
         {
-          id: 'products_',
+          id: 'product_',
           title: 'Product',
           type: 'item',
-          url: '/pages/login/login3',
-          target: true
+          url: '/products/default',
+          //target: true
         },
-        {
-          id: 'items_',
-          title: 'Item',
-          type: 'item',
-          url: '/pages/register/register3',
-          target: true,
-          icon: icons.IconBrandChrome,
-        }
+        // {
+        //   id: 'register3',
+        //   title: 'Item',
+        //   type: 'item',
+        //   url: '/pages/register/register3',
+        //   target: true,
+        //   icon: icons.IconBrandChrome,
+        // }
       ]
     }
   ]
 };
 
-export default pages;
+export default products;
